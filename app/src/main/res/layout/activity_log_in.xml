@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/InicioSesion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Log_in">
+
+
+    <Button
+        android:id="@+id/nothing2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="325dp"
+        android:layout_height="384dp"
+        android:background="@drawable/forma_texto"
+        app:layout_constraintBottom_toTopOf="@+id/textocuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <Button
+        android:id="@+id/botoncrearcuenta"
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="604dp"
+        android:background="@drawable/forma_boton"
+        android:text="@string/btncrearcuenta"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/textocuenta"
+        android:layout_width="207dp"
+        android:layout_height="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/textocuenta"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/botoncrearcuenta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonsesion"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/forma_texto"
+        android:drawableRight="@drawable/usericon"
+        android:ems="10"
+        android:fadeScrollbars="false"
+        android:hint="@string/email"
+        android:inputType="textShortMessage|textWebEmailAddress|textPersonName"
+        android:isScrollContainer="false"
+        android:overScrollMode="never"
+        android:paddingLeft="20dp"
+        android:paddingRight="14dp"
+        android:scrollbarTrackVertical="@null"
+        android:scrollbars="none"
+        android:scrollHorizontally="false"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:verticalScrollbarPosition="defaultPosition"
+        app:layout_constraintEnd_toEndOf="@+id/nombreapp"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/nombreapp"
+        app:layout_constraintTop_toBottomOf="@+id/nombreapp" />
+
+    <Button
+        android:id="@+id/botonsesion"
+        android:layout_width="176dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/forma_boton"
+        android:text="@string/btniniciosesion"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtcontraseña"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtcontraseña"
+        app:layout_constraintTop_toBottomOf="@+id/txtcontraseña" />
+
+    <EditText
+        android:id="@+id/txtcontraseña"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/forma_texto"
+        android:drawableRight="@android:drawable/ic_lock_lock"
+        android:ems="10"
+        android:fadeScrollbars="false"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:isScrollContainer="false"
+        android:overScrollMode="never"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none"
+        android:scrollHorizontally="false"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/txtemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtemail"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail" />
+
+    <TextView
+        android:id="@+id/nombreapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="176dp"
+        android:layout_height="124dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@+id/txtemail"
+        app:layout_constraintEnd_toEndOf="@+id/nothing2"
+        app:layout_constraintStart_toStartOf="@+id/nothing2"
+        app:layout_constraintTop_toBottomOf="@+id/nombreapp"
+        app:layout_constraintVertical_bias="0.386" />
+
+
+</android.support.constraint.ConstraintLayout>
