@@ -37,6 +37,8 @@ Each parking slot in the streets of the city will have a parking meter with a QR
 
 * Team work 
 
+* Problem solving
+
 * Android mobile development with Java
 
 * Using Firebase as database storage
