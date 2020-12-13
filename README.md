@@ -33,6 +33,15 @@ Each parking slot in the streets of the city will have a parking meter with a QR
 ### Actual design
 <img src="https://github.com/Kevinliaoo/Online_parking/blob/master/assets/foto7.PNG">
 
+## What I learned by doing this project: 
+
+* Team work 
+
+* Android mobile development with Java
+
+* Using Firebase as database storage
+
+
 ## Authors 
 
 - Federico Custeau
